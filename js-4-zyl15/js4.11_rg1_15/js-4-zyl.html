@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>image gallery</title>
+    <script type="text/javascript">
+      function change(object_href) {
+		document.getElementById("imgid").setAttribute("src",object_href.getAttribute("href"));
+		}
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li><a href="img/1.jpg" onclick="change(this);return false;">1.jpg is girl</a></li>
+      <li><a href="img/2.jpg" onclick="change(this);return false;">2.jpg is girl</a></li>
+      <li><a href="img/3.jpg" onclick="change(this);return false;">3.jpg is girl</a></li>
+      <li><a href="img/4.jpg" onclick="change(this);return false;">4.jpg is girl</a></li>
+    </ul>
+    <img id="imgid" src="img/5.jpg"/>
+  </body>
+  </html>
